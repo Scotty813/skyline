@@ -1,23 +1,24 @@
+import { WaterThing } from "./WaterThing"
 import styled from "@emotion/styled"
 
-const rotate = "16deg"
+const rotate = "19deg"
 
 const BuildingOverlay1 = styled.div`
   position: absolute;
-  bottom: 60px;
+  bottom: 63px;
   right: 0;
   height: 354px;
   width: 200px;
   background: #76777e;
-  transform: rotate(${rotate}) translate(88px);
+  transform: rotate(${rotate}) translate(103px);
 `
 
 const BuildingOverlay2 = styled.div`
   position: absolute;
   transform: rotate(2deg);
-  bottom: 70px;
-  right: -46px;
-  height: 354px;
+  bottom: 71px;
+  right: -52px;
+  height: 341px;
   width: 200px;
   background: #76777e;
 `
@@ -27,8 +28,8 @@ const Row = styled.div`
 `
 const RectanlgeWindow = styled.span`
   display: inline-block;
-  height: 30px;
-  width: 16px;
+  height: 28px;
+  width: 14px;
   background: #c68e36;
   border: 1px solid #000000c4;
   &:nth-child(1),
@@ -54,7 +55,7 @@ const BigOvalWindow = styled(OvalWindow)`
   border-radius: 18px 18px 0 0;
   background: #d6a840;
   height: 44px;
-  width: 34px;
+  width: 32px;
 `
 const GreenTop = styled.div`
   position: absolute;
@@ -76,6 +77,7 @@ const GreenTopDots = styled.div`
 export const BigBuildingRight = () => {
   return (
     <div>
+      <WaterThing />
       <BuildingOverlay1 />
       <BuildingOverlay2>
         <GreenTop>
@@ -83,7 +85,7 @@ export const BigBuildingRight = () => {
             style={{
               display: "flex",
               gap: "16px",
-              marginLeft: "26px",
+              marginLeft: "22px",
               marginTop: "-5px",
             }}
           >
@@ -158,7 +160,7 @@ export const BigBuildingRight = () => {
             marginTop: "22px",
           }}
         >
-          <BigOvalWindow style={{ marginRight: "32px" }}>
+          <BigOvalWindow style={{ marginRight: "30px" }}>
             <div
               style={{
                 display: "flex",
