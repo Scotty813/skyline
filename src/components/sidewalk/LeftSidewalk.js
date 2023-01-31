@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 const Sidewalk = styled.div`
   position: relative;
-  background: #8c8177;
+  background: ${({ theme }) => theme.sidewalk};
   height: 350px;
   width: 500px;
   transform: rotate(21deg);
@@ -16,7 +16,7 @@ const SidewalkOverlay = styled.div`
   right: -138px;
   height: 400px;
   width: 210px;
-  background: #8c8177;
+  background: ${({ theme }) => theme.sidewalk};
 `
 
 export const LeftSidewalk = () => {

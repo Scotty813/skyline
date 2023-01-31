@@ -1,18 +1,21 @@
+import { Median } from "./Median"
 import styled from "@emotion/styled"
+
+const whiteStreetPaint = "#c2baad"
 
 const Main = styled.div`
   position: relative;
   height: 200px;
   width: 550px;
   transform: rotate(21deg);
-  background: #736c59;
+  background: ${({ theme }) => theme.street};
 `
 const Side = styled.div`
   position: absolute;
   transform: rotate(32deg);
   right: 124px;
   bottom: 155px;
-  background: #736c59;
+  background: ${({ theme }) => theme.street};
   height: 200px;
   width: 150px;
 `
@@ -24,7 +27,14 @@ const WhiteStripesContainer = styled.div`
   gap: 4px;
 `
 const WhiteStripe = styled.div`
-  background: white;
+  background: ${whiteStreetPaint};
+`
+const LaneContainer = styled.div`
+  position: absolute;
+  transform: rotate(92deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 export const MainStreet = () => {
@@ -38,6 +48,143 @@ export const MainStreet = () => {
       }}
     >
       <Main>
+        <Median />
+
+        <LaneContainer style={{ height: "158px", top: "-54px", left: "123px" }}>
+          <WhiteStripe
+            style={{
+              height: "40px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "20px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "20px",
+              width: "2px",
+            }}
+          />
+        </LaneContainer>
+
+        <LaneContainer style={{ height: "168px", top: "-35px", left: "101px" }}>
+          <WhiteStripe
+            style={{
+              height: "40px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "20px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "20px",
+              width: "2px",
+            }}
+          />
+        </LaneContainer>
+
+        <LaneContainer style={{ height: "168px", top: "-11px", left: "80px" }}>
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+          <WhiteStripe
+            style={{
+              height: "5px",
+              width: "2px",
+            }}
+          />
+        </LaneContainer>
+
         {/* Left top */}
         <WhiteStripesContainer
           style={{

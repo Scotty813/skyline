@@ -1,10 +1,10 @@
 import styled from "@emotion/styled"
 
 const Sidewalk = styled.div`
-  background: #8c8177;
+  background: ${({ theme }) => theme.sidewalk};
   height: 96px;
   width: 375px;
-  border: 1px solid #8c8177;
+  border: 1px solid ${({ theme }) => theme.sidewalk};
   transform: rotate(21deg);
   border-radius: 0px 0px 0px 34px;
   border-left: transparent;
