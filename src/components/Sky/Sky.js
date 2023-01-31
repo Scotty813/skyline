@@ -2,6 +2,8 @@ import { Clouds } from "./Clouds"
 import styled from "@emotion/styled"
 
 const SkyContainer = styled.div`
+  position: "relative";
+  z-index: 1;
   height: 348px;
   background: rgb(189, 199, 214);
   background: linear-gradient(

@@ -1,4 +1,5 @@
 import { BigBuildingRight } from "./BigBuildingRight"
+import { LeftSidewalk } from "./sidewalk/LeftSidewalk"
 import { MainStreet } from "./street/MainStreet"
 import { RightBuildingSidewalk } from "./sidewalk/RightBuildingSidewalk"
 import { Sky } from "./sky/Sky"
@@ -19,6 +20,7 @@ export const Skyline = () => {
       <BigBuildingRight />
       <RightBuildingSidewalk />
       <MainStreet />
+      <LeftSidewalk />
     </div>
   )
 }

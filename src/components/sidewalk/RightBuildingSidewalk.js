@@ -16,7 +16,7 @@ const SidewalkOverlay = styled.div`
   left: 35px;
   transform: rotate(57deg);
   height: 144px;
-  border-right: 40px solid white;
+  border-right: 40px solid #736c59;
 `
 
 export const RightBuildingSidewalk = () => {

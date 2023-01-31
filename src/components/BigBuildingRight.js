@@ -14,6 +14,7 @@ const BuildingOverlay1 = styled.div`
 `
 
 const BuildingOverlay2 = styled.div`
+  z-index: 5;
   position: absolute;
   transform: rotate(2deg);
   bottom: 71px;
