@@ -14,7 +14,6 @@ function App() {
       <h1>Skyline</h1>
       <div style={{ display: "flex", flex: 1, marginTop: "48px", gap: "24px" }}>
         <div style={{ flex: 1 }}>
-          Img
           <div>
             <img
               alt="skyline"
@@ -25,7 +24,6 @@ function App() {
           </div>
         </div>
         <div style={{ flex: 1 }}>
-          Code
           <Skyline />
         </div>
       </div>

@@ -4,19 +4,19 @@ const rotate = "16deg"
 
 const BuildingOverlay1 = styled.div`
   position: absolute;
-  bottom: 64px;
+  bottom: 60px;
   right: 0;
   height: 354px;
   width: 200px;
   background: #76777e;
-  transform: rotate(${rotate}) translate(80px);
+  transform: rotate(${rotate}) translate(88px);
 `
 
 const BuildingOverlay2 = styled.div`
   position: absolute;
-  transform: rotate(3deg);
-  bottom: 72px;
-  right: -40px;
+  transform: rotate(2deg);
+  bottom: 70px;
+  right: -46px;
   height: 354px;
   width: 200px;
   background: #76777e;
@@ -29,7 +29,7 @@ const RectanlgeWindow = styled.span`
   display: inline-block;
   height: 30px;
   width: 16px;
-  background: #bb862c;
+  background: #c68e36;
   border: 1px solid #000000c4;
   &:nth-child(1),
   &:nth-child(3) {
@@ -63,6 +63,8 @@ const GreenTop = styled.div`
   height: 11px;
   width: 100%;
   left: -4px;
+  top: -4px;
+  transform: rotate(358deg);
 `
 const GreenTopDots = styled.div`
   width: 7px;
