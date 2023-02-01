@@ -49,6 +49,27 @@ export const MainStreet = () => {
     >
       <Main>
         <Median />
+        <WhiteStripe
+          style={{
+            position: "absolute",
+            height: "56px",
+            width: "8px",
+            left: "75px",
+            top: "123px",
+            transform: "rotate(343deg) skew(307deg)",
+          }}
+        />
+
+        <WhiteStripe
+          style={{
+            position: "absolute",
+            height: "30px",
+            width: "2px",
+            left: "73px",
+            top: "120px",
+            transform: "rotate(98deg)",
+          }}
+        />
 
         <LaneContainer style={{ height: "158px", top: "-54px", left: "123px" }}>
           <WhiteStripe
