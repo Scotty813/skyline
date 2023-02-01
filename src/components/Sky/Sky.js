@@ -1,5 +1,5 @@
 import { Clouds } from "./Clouds"
-import styled from "@emotion/styled"
+import styled from "@emotion/styled/macro"
 
 const SkyContainer = styled.div`
   position: relative;

@@ -1,5 +1,5 @@
 import { Median } from "./Median"
-import styled from "@emotion/styled"
+import styled from "@emotion/styled/macro"
 
 const whiteStreetPaint = "#c2baad"
 

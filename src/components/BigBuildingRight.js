@@ -1,5 +1,5 @@
 import { WaterThing } from "./WaterThing"
-import styled from "@emotion/styled"
+import styled from "@emotion/styled/macro"
 
 const rotate = "19deg"
 

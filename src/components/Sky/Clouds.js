@@ -1,4 +1,4 @@
-import styled from "@emotion/styled"
+import styled from "@emotion/styled/macro"
 
 const Cloud = styled.div`
   height: 8px;

@@ -1,4 +1,4 @@
-import styled from "@emotion/styled"
+import styled from "@emotion/styled/macro"
 
 const YellowBorder = styled.div`
   position: absolute;
