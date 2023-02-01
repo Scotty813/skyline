@@ -11,9 +11,8 @@ export const Skyline = () => {
         position: "relative",
         overflow: "hidden",
         margin: "auto",
-        width: "550px",
-        height: "730px",
-        border: "1px solid black",
+        width: "551px",
+        height: "731px",
       }}
     >
       <Sky />

@@ -71,6 +71,15 @@ const StreetLightOverhang = styled(StreetLight)`
   left: 32px;
   height: 66px;
 `
+const StreetLightTopLeftThing = styled.div`
+  position: absolute;
+  transform: rotate(26deg);
+  top: 0;
+  left: -3px;
+  width: 2px;
+  height: 12px;
+  background: #969291;
+`
 const TrafficLight = styled.div`
   position: absolute;
   height: 13px;
@@ -112,6 +121,7 @@ export const Median = () => {
       <YellowBorderTopExtended />
       <YellowBorderBottomExtended />
       <StreetLight>
+        <StreetLightTopLeftThing />
         <StreetLightOverhang />
         <TrafficLight style={{ left: "2px", top: "12px", zIndex: 1 }}>
           <Light
