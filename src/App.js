@@ -12,7 +12,7 @@ function App() {
       }}
     >
       <h1>Skyline</h1>
-      <div style={{ display: "flex", flex: 1, marginTop: "48px", gap: "24px" }}>
+      <div style={{ display: "flex", flex: 1, marginTop: "18px", gap: "24px" }}>
         <div style={{ flex: 1 }}>
           <div>
             <img

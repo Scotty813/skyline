@@ -1,4 +1,8 @@
-import { BigBuildingRight } from "./BigBuildingRight"
+import { BackTall1 } from "./buildings/backgroundBuildings/BackTall1"
+import { BackTall2 } from "./buildings/backgroundBuildings/BackTall2"
+import { BackTall3 } from "./buildings/backgroundBuildings/BackTall3"
+import { BackTall4 } from "./buildings/backgroundBuildings/BackTall4"
+import { BigBuildingRight } from "./buildings/foregroundBuildings/BigBuildingRight"
 import { LeftSidewalk } from "./sidewalk/LeftSidewalk"
 import { MainStreet } from "./street/MainStreet"
 import { RightBuildingSidewalk } from "./sidewalk/RightBuildingSidewalk"
@@ -16,6 +20,14 @@ export const Skyline = () => {
       }}
     >
       <Sky />
+
+      {/* Background Buildings */}
+      <BackTall1 />
+      <BackTall2 />
+      <BackTall3 />
+      <BackTall4 />
+
+      {/* Foreground */}
       <BigBuildingRight />
       <RightBuildingSidewalk />
       <MainStreet />

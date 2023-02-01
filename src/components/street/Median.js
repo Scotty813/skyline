@@ -51,7 +51,6 @@ const RightMedian = styled.div`
 const YellowLine = styled.div`
   position: absolute;
   width: 3px;
-  //   height: 20px;
   background: ${({ theme }) => theme.streetYellowPaint};
   transform: rotate(333deg);
 `
@@ -71,10 +70,19 @@ const StreetLightOverhang = styled(StreetLight)`
   left: 32px;
   height: 66px;
 `
+const StreetLightSign = styled.div`
+  position: absolute;
+  top: 30px;
+  left: -3px;
+  height: 10px;
+  width: 7px;
+  background: #cfb294;
+  transform: rotate(347deg) skew(348deg);
+`
 const StreetLightTopLeftThing = styled.div`
   position: absolute;
-  transform: rotate(26deg);
-  top: 0;
+  transform: rotate(38deg);
+  top: -1px;
   left: -3px;
   width: 2px;
   height: 12px;
@@ -123,6 +131,7 @@ export const Median = () => {
       <StreetLight>
         <StreetLightTopLeftThing />
         <StreetLightOverhang />
+        <StreetLightSign />
         <TrafficLight style={{ left: "2px", top: "12px", zIndex: 1 }}>
           <Light
             style={{ bottom: "9px", left: "2px", background: "#e22c2a" }}
