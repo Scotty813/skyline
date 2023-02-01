@@ -26,7 +26,7 @@ export const LeftSidewalk = () => {
         position: "absolute",
         left: "-162px",
         bottom: "148px",
-        zIndex: -5,
+        zIndex: -9999,
       }}
     >
       <Sidewalk>

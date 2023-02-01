@@ -44,7 +44,7 @@ export const MainStreet = () => {
         position: "absolute",
         bottom: "-108px",
         left: "-71px",
-        zIndex: "-6",
+        zIndex: "-9999",
       }}
     >
       <Main>
