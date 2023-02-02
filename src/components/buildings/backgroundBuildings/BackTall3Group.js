@@ -19,7 +19,7 @@ const BuildingLeftTop = styled.div`
 const BuildingLeftBottom = styled.div`
   height: 45px;
   background: #575753;
-  transform: skew(0, -7deg);
+  transform: skew(0, -3deg);
 `
 const BuildingRight = styled.div`
   height: 60px;

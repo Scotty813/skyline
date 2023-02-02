@@ -33,11 +33,11 @@ const RectanlgeWindow = styled.span`
   width: 14px;
   background: #c68e36;
   border: 1px solid #000000c4;
-  &:nth-child(1),
-  &:nth-child(3) {
+  &:nth-of-type(1),
+  &:nth-of-type(3) {
     margin-right: 6px;
   }
-  &:nth-child(2) {
+  &:nth-of-type(2) {
     margin-right: 24px;
   }
 `
