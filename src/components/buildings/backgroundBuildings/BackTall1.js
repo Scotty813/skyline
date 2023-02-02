@@ -13,7 +13,7 @@ const BackTall1Building = styled.div`
 `
 const Antenna = styled.div`
   position: absolute;
-  left: 20px;
+  left: 21px;
   top: -26px;
   height: 27px;
   width: 1px;

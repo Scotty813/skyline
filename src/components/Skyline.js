@@ -1,6 +1,7 @@
 import { BackTall1 } from "./buildings/backgroundBuildings/BackTall1"
 import { BackTall2 } from "./buildings/backgroundBuildings/BackTall2"
 import { BackTall3 } from "./buildings/backgroundBuildings/BackTall3"
+import { BackTall3Group } from "./buildings/backgroundBuildings/BackTall3Group"
 import { BackTall4 } from "./buildings/backgroundBuildings/BackTall4"
 import { BigBuildingRight } from "./buildings/foregroundBuildings/BigBuildingRight"
 import { LeftSidewalk } from "./sidewalk/LeftSidewalk"
@@ -22,10 +23,13 @@ export const Skyline = () => {
       <Sky />
 
       {/* Background Buildings */}
-      <BackTall1 />
-      <BackTall2 />
-      <BackTall3 />
-      <BackTall4 />
+      <div style={{ boxSizing: "border-box" }}>
+        <BackTall1 />
+        <BackTall2 />
+        <BackTall3Group />
+        <BackTall3 />
+        <BackTall4 />
+      </div>
 
       {/* Foreground */}
       <BigBuildingRight />

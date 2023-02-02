@@ -3,7 +3,7 @@ import styled from "@emotion/styled/macro"
 const BackTall3Container = styled.div`
   position: absolute;
   top: 255px;
-  left: 244px;
+  left: 248px;
 `
 const Building = styled.div`
   box-sizing: border-box;

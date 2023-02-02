@@ -3,13 +3,13 @@ import styled from "@emotion/styled/macro"
 const BackTall4Container = styled.div`
   position: absolute;
   top: 286px;
-  left: 272px;
+  left: 274px;
 `
 const Building = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30px;
+  width: 28px;
   height: 70px;
 `
 const Topper = styled.div`
