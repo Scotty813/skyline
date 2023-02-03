@@ -33,6 +33,11 @@ const Light = styled.div`
   width: 1px;
   background: ${({ theme }) => theme.lights.smallLight};
 `
+const BottomRightBuilding = styled.div`
+  position: absolute;
+  right: -10px;
+  bottom: 44px;
+`
 
 export const BackTall5Group = () => {
   return (
@@ -134,6 +139,10 @@ export const BackTall5Group = () => {
           top: "45px",
         }}
       />
+      <BottomRightBuilding>
+        <div style={{ height: "4px", width: "8px", background: "#465769" }} />
+        <div style={{ height: "10px", width: "10px", background: "#a0b0aa" }} />
+      </BottomRightBuilding>
     </BackTall5GroupContainer>
   )
 }

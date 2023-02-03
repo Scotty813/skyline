@@ -1,3 +1,4 @@
+import { Lights } from "../../lights/Lights"
 import styled from "@emotion/styled/macro"
 
 const BackTall2Container = styled.div`
@@ -27,62 +28,71 @@ const BackTall2Building = styled.div`
 `
 const Antenna = styled.div`
   position: absolute;
-  left: 22px;
-  top: -14px;
-  height: 14px;
+  left: 24px;
+  top: -11px;
+  height: 12px;
   width: 1px;
   background: #21212a61;
 `
-const LightsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1px;
+const BuildingLeft = styled.div`
+  position: absolute;
+  top: 25px;
+  left: 2px;
+  background: #4e4656;
+  height: 35px;
+  width: 6px;
 `
-const Light = styled.div`
-  height: 1px;
-  width: 1px;
-  background: ${({ theme }) => theme.lights.smallLight};
+const BuildingSuperLeft = styled.div`
+  position: absolute;
+  width: 9px;
+  height: 20px;
+  left: -8px;
+  top: 43px;
+  background: #5a5c70;
 `
-
-const lights = Array(50)
-const Lights = lights.fill(Light)
 
 export const BackTall2 = () => {
   return (
     <BackTall2Container>
+      <BuildingSuperLeft />
+      <BuildingLeft>
+        <Lights numLights={3} />
+      </BuildingLeft>
       <Antenna />
-      <Antenna style={{ left: "34px" }} />
+      <Antenna style={{ left: "38px", height: "14px", top: "-12px" }} />
       <BackTall2Building>
-        <LightsContainer
-          style={{ position: "absolute", left: "30px", top: "23px" }}
-        >
-          {Lights.slice(0, 2).map((Light, i) => (
-            <Light key={i} />
-          ))}
-        </LightsContainer>
-
-        <LightsContainer
-          style={{ position: "absolute", left: "17px", top: "30px" }}
-        >
-          {Lights.slice(0, 10).map((Light, i) => (
-            <Light key={i} />
-          ))}
-        </LightsContainer>
-        <LightsContainer
-          style={{ position: "absolute", left: "17px", top: "32px" }}
-        >
-          {Lights.slice(0, 10).map((Light, i) => (
-            <Light key={i} />
-          ))}
-        </LightsContainer>
-
-        <LightsContainer
-          style={{ position: "absolute", left: "17px", top: "44px" }}
-        >
-          {Lights.slice(0, 11).map((Light, i) => (
-            <Light key={i} />
-          ))}
-        </LightsContainer>
+        <Lights
+          numLights={2}
+          containerStyles={{
+            position: "absolute",
+            left: "30px",
+            top: "23px",
+          }}
+        />
+        <Lights
+          numLights={10}
+          containerStyles={{
+            position: "absolute",
+            left: "17px",
+            top: "30px",
+          }}
+        />
+        <Lights
+          numLights={10}
+          containerStyles={{
+            position: "absolute",
+            left: "17px",
+            top: "32px",
+          }}
+        />
+        <Lights
+          numLights={11}
+          containerStyles={{
+            position: "absolute",
+            left: "17px",
+            top: "44px",
+          }}
+        />
       </BackTall2Building>
     </BackTall2Container>
   )

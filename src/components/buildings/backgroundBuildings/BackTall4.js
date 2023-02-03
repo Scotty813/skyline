@@ -1,3 +1,4 @@
+import { Lights } from "../../lights/Lights"
 import styled from "@emotion/styled/macro"
 
 const BackTall4Container = styled.div`
@@ -37,6 +38,34 @@ const Light = styled.div`
   width: 1px;
   background: ${({ theme }) => theme.lights.smallLight};
 `
+const BottomRightSection = styled.div`
+  position: absolute;
+  display: flex;
+  height: 42px;
+  right: -18px;
+  top: 39px;
+`
+const LeftSection = styled.div`
+  width: 5px;
+  background: #4b4c5d;
+`
+const RightSection = styled.div`
+  width: 9px;
+  background: #393b4c;
+  margin-top: 3px;
+`
+const RightRightSection = styled.div`
+  width: 4px;
+  background: #5b5b5c;
+  margin-top: 15px;
+`
+const BottomLeftSection = styled.div`
+  position: absolute;
+  top: 29px;
+  left: -7px;
+  display: flex;
+  align-items: flex-end;
+`
 
 export const BackTall4 = () => {
   return (
@@ -66,6 +95,26 @@ export const BackTall4 = () => {
         }}
       />
       <Topper />
+      <BottomLeftSection>
+        <div
+          style={{ width: "2px", height: "3px", background: "#58434c" }}
+        ></div>
+        <div
+          style={{ width: "2px", height: "11px", background: "#58434c" }}
+        ></div>
+        <div
+          style={{ width: "3px", height: "15px", background: "#58434c" }}
+        ></div>
+        <Lights
+          numLights={2}
+          containerStyles={{ position: "absolute", bottom: "4px", right: 0 }}
+        />
+      </BottomLeftSection>
+      <BottomRightSection>
+        <LeftSection />
+        <RightSection />
+        <RightRightSection />
+      </BottomRightSection>
       <Building>
         <BuildingTop />
         <BuildingBottom />
