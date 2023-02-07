@@ -9,6 +9,9 @@ import { BackTall6Group } from "./buildings/backgroundBuildings/BackTall6Group"
 import { BackTall7Group } from "./buildings/backgroundBuildings/BackTall7Group"
 import { BackTall8Group } from "./buildings/backgroundBuildings/BackTall8Group"
 import { BigBuildingRight } from "./buildings/foregroundBuildings/BigBuildingRight"
+import { Front3 } from "./buildings/foregroundBuildings/Front3"
+import { Front4 } from "./buildings/foregroundBuildings/Front4"
+import { Front5 } from "./buildings/foregroundBuildings/Front5"
 import { Front6 } from "./buildings/foregroundBuildings/Front6"
 import { LeftSidewalk } from "./sidewalk/LeftSidewalk"
 import { MainStreet } from "./street/MainStreet"
@@ -41,6 +44,9 @@ export const Skyline = () => {
       <BackTall4 />
 
       {/* Foreground */}
+      <Front3 />
+      <Front4 />
+      <Front5 />
       <Front6 />
 
       <BigBuildingRight />
