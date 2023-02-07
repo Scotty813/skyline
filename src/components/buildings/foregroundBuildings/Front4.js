@@ -10,14 +10,14 @@ const Front4Container = styled.div`
 const RedPart = styled.div`
   background: #46302b;
   height: 164px;
-  clip-path: polygon(0 3%, 100% 8%, 100% 100%, 0 92%);
+  clip-path: polygon(0 6%, 100% 8%, 100% 100%, 0 92%);
 `
 const TopPart = styled.div`
   position: relative;
   background: #0e0a07;
   height: 9px;
-  transform: skewY(10deg);
-  top: 10px;
+  transform: skewY(6deg);
+  top: 12px;
 `
 export const Front4 = () => {
   return (
