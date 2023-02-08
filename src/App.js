@@ -1,5 +1,5 @@
 import { Skyline } from "./components/Skyline"
-import skyline from "./skyline.jpg"
+import skyline from "./pictures/skyline.jpg"
 
 function App() {
   return (

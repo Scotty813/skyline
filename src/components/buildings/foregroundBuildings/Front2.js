@@ -21,14 +21,14 @@ export const Front2 = () => {
         numDoors={2}
         containerStyles={{
           position: "absolute",
-          top: "24px",
+          top: "26px",
           left: "3px",
           transform: "skewY(9deg)",
           gap: "4px",
         }}
         doorStyles={{
-          width: "9px",
-          height: "9px",
+          width: "8px",
+          height: "8px",
           borderRadius: "10px 10px 0 0",
         }}
       />
@@ -36,14 +36,14 @@ export const Front2 = () => {
         numDoors={2}
         containerStyles={{
           position: "absolute",
-          top: "43px",
+          top: "45px",
           left: "3px",
           transform: "skewY(9deg)",
           gap: "4px",
         }}
         doorStyles={{
-          width: "9px",
-          height: "9px",
+          width: "8px",
+          height: "8px",
           borderRadius: "0",
         }}
       />
@@ -51,14 +51,14 @@ export const Front2 = () => {
         numDoors={2}
         containerStyles={{
           position: "absolute",
-          top: "64px",
+          top: "65px",
           left: "3px",
           transform: "skewY(9deg)",
           gap: "4px",
         }}
         doorStyles={{
-          width: "9px",
-          height: "9px",
+          width: "8px",
+          height: "8px",
           borderRadius: "0",
         }}
       />
