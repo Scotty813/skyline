@@ -29,12 +29,50 @@ const SideFace = styled.div`
   background: #8099ae;
   transform: skewY(-3deg);
 `
+const Banner = styled.div`
+  position: absolute;
+  bottom: 25px;
+  left: -3px;
+  height: 10px;
+  width: 40px;
+  background: #3a70ac;
+  transform: skewY(15deg);
+`
 export const Front4 = () => {
   return (
     <Front4Container>
       <SideFace />
       <TopPart />
       <RedPart />
+      <Banner>
+        <div
+          style={{
+            fontSize: "3px",
+            fontWeight: 700,
+            color: "white",
+          }}
+        >
+          CASH REGISTERS
+        </div>
+        <div
+          style={{
+            fontSize: "2px",
+            fontWeight: 400,
+            color: "white",
+          }}
+        >
+          slicers, scales, safes bandsaws
+        </div>
+        <div
+          style={{
+            fontSize: "2px",
+            fontWeight: 400,
+            color: "white",
+          }}
+        >
+          new & used bought & sold
+        </div>
+      </Banner>
       <Doorways
         numDoors={3}
         containerStyles={{

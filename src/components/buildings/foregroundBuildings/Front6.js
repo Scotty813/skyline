@@ -59,7 +59,16 @@ const BlackCircularThing = styled.div`
 `
 // Divs are reversed to avoid z indexing everything...
 // I want the div at the top of jsx to be on the bottom of the ui so it goes behind the div above it.
-
+const BannerThing = styled.div`
+  position: absolute;
+  top: 160px;
+  left: -4px;
+  width: 15px;
+  height: 15px;
+  background: #0d0b0a;
+  border-radius: 4px 4px 0 0;
+  transform: skewY(10deg);
+`
 export const Front6 = () => {
   return (
     <Front6Container>
@@ -136,6 +145,20 @@ export const Front6 = () => {
             transform: "skewY(4deg)",
           }}
         />
+        <BannerThing>
+          <div
+            style={{
+              color: "white",
+              fontSize: "3px",
+              position: "absolute",
+              fontWeight: 800,
+              top: "4px",
+              left: "1px",
+            }}
+          >
+            Kings Avenue
+          </div>
+        </BannerThing>
         <Doorways
           numDoors={3}
           containerStyles={{
@@ -162,9 +185,9 @@ export const Front6 = () => {
           numDoors={3}
           containerStyles={{
             position: "absolute",
-            top: "92px",
+            top: "93px",
             left: "10px",
-            transform: "skewY(12deg)",
+            transform: "skewY(10deg)",
             gap: "4px",
           }}
           doorStyles={{ width: "8px", background: "#aba86f" }}
@@ -201,8 +224,9 @@ export const Front6 = () => {
         <div
           style={{
             position: "absolute",
-            bottom: "-172px",
-            width: "76px",
+            bottom: "-169px",
+            left: "14px",
+            width: "62px",
             height: "37px",
             border: "1px solid black",
             background: "#f0b70e85",
@@ -597,8 +621,8 @@ export const Front6 = () => {
           numDoors={1}
           containerStyles={{
             position: "absolute",
-            top: "97px",
-            left: "-4px",
+            top: "98px",
+            left: "-2px",
           }}
           doorStyles={{ width: "4px", background: "#aba86f" }}
         />

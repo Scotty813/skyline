@@ -29,12 +29,41 @@ const SideFace = styled.div`
   background: #8297ae;
   transform: rotate(2deg);
 `
+const Banner = styled.div`
+  position: absolute;
+  bottom: 27px;
+  left: -5px;
+  height: 15px;
+  width: 72px;
+  background: #b88738;
+  transform: skewY(15deg);
+  border-radius: 5px 0 0 0;
+`
 export const Front3 = () => {
   return (
     <Front3Container>
       <SideFace />
       <TopPart />
       <WhitePart />
+      <Banner>
+        <div
+          style={{
+            position: "absolute",
+            top: "6px",
+            left: "2px",
+            display: "flex",
+            gap: "3px",
+            color: "#aa3337",
+            fontSize: "2px",
+            fontWeight: 800,
+            transform: "scaleY(2.5)",
+            width: "70px",
+          }}
+        >
+          <div>DAROMA RESTAURANT EQUIPMENT</div>
+          <div>DIAMOND EQUIPMENT</div>
+        </div>
+      </Banner>
       <Doorways
         numDoors={4}
         containerStyles={{
@@ -42,7 +71,7 @@ export const Front3 = () => {
           top: "24px",
           left: "6px",
           gap: "10px",
-          transform: "skewY(9deg)",
+          transform: "skewY(10deg)",
         }}
         doorStyles={{
           height: "10px",
@@ -57,7 +86,7 @@ export const Front3 = () => {
           top: "45px",
           left: "6px",
           gap: "10px",
-          transform: "skewY(9deg)",
+          transform: "skewY(10deg)",
         }}
         doorStyles={{
           height: "10px",
