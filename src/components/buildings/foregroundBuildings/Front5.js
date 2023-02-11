@@ -19,10 +19,24 @@ const TopPart = styled.div`
   position: relative;
   top: 8px;
 `
+const TopFace = styled.div`
+  position: absolute;
+  top: -59px;
+  clip-path: polygon(100% 37%, 0 62%, 100% 81%);
+  height: 110px;
+  width: 90px;
+  background: #ffffff;
+  transform: rotate(5deg);
+`
+const TopFaceOverlay = styled(TopFace)`
+  background: #4b5b6bd9;
+`
 
 export const Front5 = () => {
   return (
     <Front5Container>
+      <TopFace />
+      <TopFaceOverlay />
       <TopPart />
       <RedPart />
       <Doorways

@@ -47,7 +47,7 @@ export const Front1 = () => {
           top: "-60px",
           left: "3px",
           height: "52px",
-          transform: "skewY(7deg)",
+          transform: "skewY(4deg)",
         }}
       >
         <img

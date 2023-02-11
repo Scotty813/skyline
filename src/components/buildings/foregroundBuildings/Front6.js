@@ -20,6 +20,43 @@ const RightFace = styled.div`
   flex-direction: column-reverse;
   width: 200px;
 `
+const TopWhiteThing = styled.div`
+  position: absolute;
+  top: -23px;
+  right: 72px;
+  width: 57px;
+  height: 20px;
+  background: #92aec5;
+  transform: skewY(1deg);
+  border-top: 2px solid #a0bed9;
+`
+const WhiteTriangleThing = styled.div`
+  position: absolute;
+  top: -24px;
+  right: 120px;
+  height: 20px;
+  width: 15px;
+  background: #869dad;
+  clip-path: polygon(0 44%, 0% 100%, 100% 100%);
+`
+const AirConditioner = styled.div`
+  position: absolute;
+  left: 14px;
+  top: -6px;
+  width: 8px;
+  height: 6px;
+  background: #87a0b9;
+  transform: skewY(-2deg);
+`
+const BlackCircularThing = styled.div`
+  position: absolute;
+  left: 47px;
+  top: -13px;
+  width: 17px;
+  height: 17px;
+  background: #2c3841;
+  clip-path: ellipse(49% 17% at 50% 50%);
+`
 // Divs are reversed to avoid z indexing everything...
 // I want the div at the top of jsx to be on the bottom of the ui so it goes behind the div above it.
 
@@ -74,7 +111,7 @@ export const Front6 = () => {
             bottom: "-102px",
             width: "100%",
             height: "108px",
-            background: "#5d5448",
+            background: "#443a2d",
             transform: "skewY(13deg)",
           }}
         />
@@ -208,7 +245,7 @@ export const Front6 = () => {
           style={{
             height: "107px",
             width: "100%",
-            background: "#5d5448",
+            background: "#443a2d",
             position: "absolute",
             bottom: "-80px",
             transform: "skewY(-16deg)",
@@ -232,6 +269,102 @@ export const Front6 = () => {
             position: "absolute",
             bottom: "10px",
             transform: "skewY(-5deg)",
+          }}
+        />
+        <TopWhiteThing>
+          <div
+            style={{
+              position: "relative",
+              height: "1px",
+              background: "#00000040",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              right: "24px",
+              height: "15px",
+              width: "1px",
+              background: "#0000002b",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              right: "6px",
+              top: "4px",
+              display: "flex",
+              gap: "4px",
+            }}
+          >
+            <div
+              style={{
+                height: "10px",
+                width: "3px",
+                background: "#000000a6",
+              }}
+            />
+            <div
+              style={{
+                height: "8px",
+                width: "3px",
+                background: "#00000052",
+              }}
+            />
+            <div
+              style={{
+                height: "8px",
+                width: "3px",
+                background: "#000000a6",
+              }}
+            />
+          </div>
+        </TopWhiteThing>
+        <WhiteTriangleThing />
+        <div
+          style={{
+            position: "absolute",
+            top: "-15px",
+            right: "122px",
+            height: "10px",
+            width: "6px",
+            background: "#96bad8",
+            transform: "skewX(52deg)",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: "-12px",
+            right: "119px",
+            height: "5px",
+            width: "5px",
+            background: "#00000087",
+            transform: "skewX(52deg)",
+          }}
+        />
+        <AirConditioner>
+          <div
+            style={{
+              position: "absolute",
+              height: "3px",
+              width: "3px",
+              background: "#1d2328",
+              left: "3px",
+              top: "2px",
+            }}
+          />
+        </AirConditioner>
+        <BlackCircularThing />
+        <div // topper to black circular thing
+          style={{
+            position: "absolute",
+            top: "-9px",
+            left: "53px",
+            width: "4px",
+            height: "2px",
+            background: "#090d18a8",
+            borderRadius: "10px",
           }}
         />
         <div

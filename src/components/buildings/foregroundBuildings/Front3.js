@@ -19,10 +19,20 @@ const TopPart = styled.div`
   transform: skewY(10deg);
   top: 10px;
 `
-
+const SideFace = styled.div`
+  position: absolute;
+  top: -19px;
+  left: 0px;
+  width: 100px;
+  height: 50px;
+  clip-path: polygon(100% 14%, 0 50%, 100% 76%);
+  background: #8297ae;
+  transform: rotate(2deg);
+`
 export const Front3 = () => {
   return (
     <Front3Container>
+      <SideFace />
       <TopPart />
       <WhitePart />
       <Doorways

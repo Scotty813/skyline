@@ -1,4 +1,4 @@
-import { Lights } from "../../lights/Lights"
+import { Lights } from "../../doorways/Lights"
 import styled from "@emotion/styled/macro"
 
 const BackTall8Container = styled.div`
