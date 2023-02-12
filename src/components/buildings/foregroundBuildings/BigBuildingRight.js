@@ -1,4 +1,5 @@
 import { WaterThing } from "../../WaterThing"
+import rightBuildingGraffiti from "../../../pictures/rightBuildingGraffiti.png"
 import styled from "@emotion/styled/macro"
 
 const rotate = "19deg"
@@ -81,6 +82,19 @@ export const BigBuildingRight = () => {
       <WaterThing />
       <BuildingOverlay1 />
       <BuildingOverlay2>
+        <img
+          style={{
+            position: "absolute",
+            zIndex: "-1",
+            bottom: "-25px",
+            left: "28px",
+            width: "105px",
+            opacity: "0.85",
+            transform: "skewY(17deg)",
+          }}
+          src={rightBuildingGraffiti}
+          alt="graffiti"
+        />
         <GreenTop>
           <div
             style={{

@@ -8,17 +8,17 @@ const BackTall2Container = styled.div`
 `
 const BackTall2Building = styled.div`
   height: 66px;
-  width: 52px;
+  width: 54px;
   background: #404048;
   clip-path: polygon(
     29% 9%,
     40% 9%,
     40% 0,
     80% 0,
-    81% 34%,
-    92% 34%,
-    92% 56%,
-    100% 56%,
+    81% 27%,
+    92% 27%,
+    92% 41%,
+    100% 41%,
     100% 100%,
     12% 100%,
     12% 19%,
@@ -49,6 +49,15 @@ const BuildingSuperLeft = styled.div`
   left: -8px;
   top: 43px;
   background: #5a5c70;
+`
+const SomeVagueBuilding = styled.div`
+  position: absolute;
+  bottom: 15px;
+  right: -24px;
+  width: 30px;
+  height: 30px;
+  background: #6885a0;
+  clip-path: polygon(22% 27%, 22% 0, 100% 0, 100% 100%, 0 100%, 0 28%);
 `
 
 export const BackTall2 = () => {
@@ -94,6 +103,7 @@ export const BackTall2 = () => {
           }}
         />
       </BackTall2Building>
+      <SomeVagueBuilding />
     </BackTall2Container>
   )
 }

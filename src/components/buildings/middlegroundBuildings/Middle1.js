@@ -33,7 +33,7 @@ export const Middle1 = () => {
           <div
             style={{
               position: "absolute",
-              top: "10px",
+              top: "9px",
               left: "13px",
               display: "flex",
               height: "10px",

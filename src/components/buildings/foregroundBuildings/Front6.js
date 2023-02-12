@@ -39,6 +39,31 @@ const WhiteTriangleThing = styled.div`
   background: #869dad;
   clip-path: polygon(0 44%, 0% 100%, 100% 100%);
 `
+const BackBuildingRed = styled.div`
+  position: absolute;
+  top: -21px;
+  right: 39px;
+  width: 50px;
+  height: 16px;
+  background: #51312e;
+  transform: skewY(2deg);
+`
+const BackBuildingBeige = styled.div`
+  position: absolute;
+  top: -17px;
+  right: 29px;
+  width: 20px;
+  height: 10px;
+  background: #808b93;
+`
+const BackTallBuildingBeige = styled.div`
+  position: absolute;
+  bottom: 34px;
+  right: 40px;
+  width: 30px;
+  height: 35px;
+  background: #70838f;
+`
 const AirConditioner = styled.div`
   position: absolute;
   left: 14px;
@@ -295,6 +320,97 @@ export const Front6 = () => {
             transform: "skewY(-5deg)",
           }}
         />
+        <BackTallBuildingBeige>
+          <div
+            style={{
+              position: "absolute",
+              top: "-2px",
+              right: 0,
+              width: "20px",
+              height: "2px",
+              background: "#323842",
+            }}
+          />
+          <Doorways
+            numDoors={8}
+            containerStyles={{
+              position: "absolute",
+              top: "3px",
+              left: "5px",
+              gap: "1px",
+            }}
+            doorStyles={{
+              borderRadius: 0,
+              height: "2px",
+              width: "2px",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: "8px",
+              left: "5px",
+              height: "2px",
+              width: "2px",
+              background: "#eee0b7",
+            }}
+          />
+          <Doorways
+            numDoors={5}
+            containerStyles={{
+              position: "absolute",
+              top: "8px",
+              left: "9px",
+              gap: "1px",
+            }}
+            doorStyles={{
+              borderRadius: 0,
+              height: "2px",
+              width: "2px",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: "8px",
+              left: "26px",
+              height: "2px",
+              width: "2px",
+              background: "#eee0b7",
+            }}
+          />
+          <Doorways
+            numDoors={6}
+            containerStyles={{
+              position: "absolute",
+              top: "14px",
+              left: "5px",
+              gap: "2px",
+            }}
+            doorStyles={{
+              borderRadius: 0,
+              height: "2px",
+              width: "2px",
+            }}
+          />
+        </BackTallBuildingBeige>
+        <BackBuildingRed>
+          <Doorways
+            numDoors={2}
+            containerStyles={{
+              position: "absolute",
+              top: "5px",
+              left: "23px",
+            }}
+            doorStyles={{
+              width: "3px",
+              height: "5px",
+              borderRadius: 0,
+              border: "1px solid #616f76",
+            }}
+          />
+        </BackBuildingRed>
+        <BackBuildingBeige />
         <TopWhiteThing>
           <div
             style={{

@@ -6,12 +6,12 @@ const BackTall6Container = styled.div`
   height: 100px;
   display: flex;
   top: 264px;
-  left: 76px;
+  left: 75px;
 `
 const BuildingLeft = styled.div`
   margin-top: 10px;
   transform: skew(0, -4deg);
-  width: 9px;
+  width: 10px;
   background: #47637a;
 `
 const BuildingRight = styled.div`

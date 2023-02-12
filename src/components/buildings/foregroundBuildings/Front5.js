@@ -18,6 +18,7 @@ const TopPart = styled.div`
   transform: skewY(9deg);
   position: relative;
   top: 8px;
+  left: -1px;
 `
 const TopFace = styled.div`
   position: absolute;
