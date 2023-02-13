@@ -37,7 +37,7 @@ const Banner = styled.div`
   width: 40px;
   background: #3a70ac;
   transform: skewY(15deg);
-  padding-top: 4px;
+  padding-top: 2px;
 `
 export const Front4 = () => {
   return (

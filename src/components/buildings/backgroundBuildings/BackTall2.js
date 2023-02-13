@@ -59,10 +59,50 @@ const SomeVagueBuilding = styled.div`
   background: #6885a0;
   clip-path: polygon(22% 27%, 22% 0, 100% 0, 100% 100%, 0 100%, 0 28%);
 `
+const SuperBackBuilding = styled.div`
+  position: absolute;
+  top: 10px;
+  right: -39px;
+  width: 24px;
+  height: 22px;
+  background: #494e60;
+  clip-path: polygon(
+    19% 23%,
+    37% 23%,
+    37% 10%,
+    54% 0,
+    92% 27%,
+    92% 45%,
+    93% 100%,
+    0 100%,
+    0 47%,
+    19% 45%
+  );
+`
 
 export const BackTall2 = () => {
   return (
     <BackTall2Container>
+      <SuperBackBuilding>
+        <Lights
+          numLights={3}
+          containerStyles={{
+            position: "absolute",
+            top: "7px",
+            left: "8px",
+            gap: "3px",
+          }}
+        />
+        <Lights
+          numLights={3}
+          containerStyles={{
+            position: "absolute",
+            top: "9px",
+            left: "8px",
+            gap: "3px",
+          }}
+        />
+      </SuperBackBuilding>
       <BuildingSuperLeft />
       <BuildingLeft>
         <Lights numLights={3} />
