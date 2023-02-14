@@ -18,6 +18,7 @@ import { Front6 } from "./buildings/foregroundBuildings/Front6"
 import { LeftSidewalk } from "./sidewalk/LeftSidewalk"
 import { MainStreet } from "./street/MainStreet"
 import { Middle1 } from "./buildings/middlegroundBuildings/Middle1"
+import { MiddleBack } from "./buildings/middlegroundBuildings/MiddleBack"
 import { RightBuildingSidewalk } from "./sidewalk/RightBuildingSidewalk"
 import { Sky } from "./sky/Sky"
 
@@ -47,6 +48,8 @@ export const Skyline = () => {
       <BackTall4 />
 
       {/* MiddleGround */}
+      {/* I dont care anymore */}
+      <MiddleBack />
       {/*  Front Row */}
       <Middle1 />
 

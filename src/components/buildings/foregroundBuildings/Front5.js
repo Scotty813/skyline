@@ -15,7 +15,7 @@ const RedPart = styled.div`
 const TopPart = styled.div`
   background: #0e0a07;
   height: 7px;
-  transform: skewY(9deg);
+  transform: skewY(7deg);
   position: relative;
   top: 8px;
   left: -1px;
