@@ -16,7 +16,7 @@ const TopPart = styled.div`
   position: relative;
   background: #0e0a07;
   height: 9px;
-  transform: skewY(6deg);
+  transform: skewY(5deg);
   top: 12px;
 `
 const SideFace = styled.div`
@@ -39,9 +39,87 @@ const Banner = styled.div`
   transform: skewY(15deg);
   padding-top: 2px;
 `
+const BackFace = styled.div`
+  position: absolute;
+  top: 9px;
+  left: 2px;
+  height: 20px;
+  width: 87px;
+  background: #333232;
+  transform: skewY(-2deg);
+`
+const TopThingRight = styled.div`
+  position: absolute;
+  top: 0px;
+  right: -49px;
+  width: 14px;
+  height: 15px;
+  background: #28475f;
+  clip-path: polygon(0 15%, 100% 63%, 100% 100%, 0% 100%);
+`
+const TopThingLeft = styled.div`
+  position: absolute;
+  transform: skewY(-2deg);
+  top: 10px;
+  right: -37px;
+  width: 28px;
+  height: 6px;
+  background: #414e57;
+`
+const LightBackBuilding = styled.div`
+  position: absolute;
+  right: -51px;
+  top: -10px;
+  background: #839091;
+  width: 37px;
+  height: 20px;
+  transform: skew(-3deg, 1deg);
+`
 export const Front4 = () => {
   return (
     <Front4Container>
+      <LightBackBuilding>
+        <Doorways
+          numDoors={1}
+          containerStyles={{
+            position: "absolute",
+            left: "8px",
+            top: "11px",
+          }}
+          doorStyles={{
+            borderRadius: 0,
+            height: "10px",
+            width: "3px",
+          }}
+        />
+        <Doorways
+          numDoors={1}
+          containerStyles={{
+            position: "absolute",
+            right: "13px",
+            top: "9px",
+          }}
+          doorStyles={{
+            borderRadius: 0,
+            height: "10px",
+            width: "7px",
+          }}
+        />
+      </LightBackBuilding>
+      <BackFace />
+      <TopThingRight />
+      <TopThingLeft>
+        <div
+          style={{
+            position: "relative",
+            top: "-6px",
+            height: "6px",
+            width: "100%",
+            clipPath: "polygon(13% 25%, 82% 27%, 100% 100%, 0% 100%)",
+            background: "#6b8697",
+          }}
+        />
+      </TopThingLeft>
       <SideFace />
       <TopPart />
       <RedPart />

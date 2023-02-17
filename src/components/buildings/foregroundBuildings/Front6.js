@@ -94,9 +94,51 @@ const BannerThing = styled.div`
   border-radius: 4px 4px 0 0;
   transform: skewY(10deg);
 `
+const BackFace = styled.div`
+  position: absolute;
+  top: -6px;
+  transform: skewY(-3deg);
+  background: #443a2d;
+  width: 200px;
+  height: 20px;
+`
+const BeigeBuilding = styled.div`
+  position: absolute;
+  top: -18px;
+  left: 93px;
+  width: 30px;
+  height: 15px;
+  border-top: 3px solid #08090b;
+  background: #657172;
+  transform: skewY(-2deg);
+`
+const RandomDarkBuilding = styled.div`
+  position: absolute;
+  top: -20px;
+  left: 55px;
+  width: 39px;
+  height: 30px;
+  background: #2c3b3e;
+  transform: skewY(-5deg);
+`
+const RandomRedishBuilding = styled.div`
+  position: absolute;
+  bottom: 36px;
+  right: 65px;
+  height: 20px;
+  width: 50px;
+  background: #3f2d2d;
+  clip-path: polygon(67% 31%, 67% 0, 100% 0, 100% 100%, 0 100%, 0 31%);
+  transform: skewY(-2deg);
+`
+
 export const Front6 = () => {
   return (
     <Front6Container>
+      <BeigeBuilding></BeigeBuilding>
+      <RandomDarkBuilding />
+
+      <BackFace />
       <FrontFace>
         <div
           style={{
@@ -394,6 +436,9 @@ export const Front6 = () => {
             }}
           />
         </BackTallBuildingBeige>
+
+        <RandomRedishBuilding />
+
         <BackBuildingRed>
           <Doorways
             numDoors={2}
@@ -410,6 +455,7 @@ export const Front6 = () => {
             }}
           />
         </BackBuildingRed>
+
         <BackBuildingBeige />
         <TopWhiteThing>
           <div

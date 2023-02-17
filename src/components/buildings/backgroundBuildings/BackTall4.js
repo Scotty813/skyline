@@ -45,6 +45,15 @@ const BottomRightSection = styled.div`
   right: -18px;
   top: 39px;
 `
+const AnotherDarkBuilding = styled.div`
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  right: -48px;
+  top: 61px;
+  background: #37363e;
+`
+
 const LeftSection = styled.div`
   width: 5px;
   background: #4b4c5d;
@@ -115,6 +124,9 @@ export const BackTall4 = () => {
         <RightSection />
         <RightRightSection />
       </BottomRightSection>
+
+      <AnotherDarkBuilding />
+
       <Building>
         <BuildingTop />
         <BuildingBottom />
