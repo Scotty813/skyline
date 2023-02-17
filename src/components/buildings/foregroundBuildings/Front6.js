@@ -107,7 +107,7 @@ const BackFace = styled.div`
   position: absolute;
   top: -6px;
   transform: skewY(-3deg);
-  background: #443a2d;
+  background: #372f25;
   width: 200px;
   height: 20px;
 `
@@ -179,7 +179,7 @@ export const Front6 = () => {
               top: "7px",
               width: "100%",
               height: "1px",
-              background: "black",
+              background: "#00000061",
             }}
           />
           <div
@@ -189,7 +189,7 @@ export const Front6 = () => {
               bottom: "7px",
               width: "100%",
               height: "1px",
-              background: "black",
+              background: "#00000061",
             }}
           />
           <div
@@ -199,7 +199,7 @@ export const Front6 = () => {
               left: "15px",
               width: "1px",
               height: "100%",
-              background: "black",
+              background: "#00000061",
             }}
           />
           {/* red column */}
@@ -270,7 +270,7 @@ export const Front6 = () => {
         <div
           style={{
             height: "10px",
-            background: "#50443c",
+            background: "#443a2d",
             transform: "skewY(4deg)",
           }}
         />
@@ -420,7 +420,7 @@ export const Front6 = () => {
               top: "12px",
               height: "1px",
               width: "100%",
-              background: "black",
+              background: "#00000061",
             }}
           />
           <div
@@ -429,7 +429,7 @@ export const Front6 = () => {
               left: "4px",
               width: "1px",
               height: "100%",
-              background: "black",
+              background: "#00000061",
             }}
           />
           <div
@@ -438,7 +438,7 @@ export const Front6 = () => {
               left: "26px",
               width: "1px",
               height: "100%",
-              background: "black",
+              background: "#00000061",
             }}
           />
           <div
@@ -447,7 +447,7 @@ export const Front6 = () => {
               left: "36px",
               width: "1px",
               height: "100%",
-              background: "black",
+              background: "#00000061",
             }}
           />
           <div
@@ -456,7 +456,7 @@ export const Front6 = () => {
               left: "52px",
               width: "1px",
               height: "100%",
-              background: "black",
+              background: "#00000061",
             }}
           />
           <div
@@ -465,7 +465,7 @@ export const Front6 = () => {
               left: "59px",
               width: "1px",
               height: "100%",
-              background: "black",
+              background: "#00000061",
             }}
           />
           <div
@@ -474,7 +474,7 @@ export const Front6 = () => {
               left: "10px",
               width: "1px",
               height: "100%",
-              background: "black",
+              background: "#00000061",
             }}
           />
           <div
@@ -484,7 +484,7 @@ export const Front6 = () => {
               bottom: "8px",
               height: "1px",
               width: "100%",
-              background: "black",
+              background: "#00000061",
             }}
           />
         </div>
@@ -769,7 +769,7 @@ export const Front6 = () => {
           style={{
             height: "10px",
             width: "100%",
-            background: "#50443c",
+            background: "#443a2d",
             transform: "skewY(-5deg)",
             position: "absolute",
             bottom: "17px",

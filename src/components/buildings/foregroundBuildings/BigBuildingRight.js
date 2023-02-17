@@ -1,3 +1,4 @@
+import { Doorways } from "../../doorways/Doorways"
 import { WaterThing } from "../../WaterThing"
 import rightBuildingGraffiti from "../../../pictures/rightBuildingGraffiti.png"
 import styled from "@emotion/styled/macro"
@@ -10,7 +11,7 @@ const BuildingOverlay1 = styled.div`
   right: 0;
   height: 354px;
   width: 200px;
-  background: #76777e;
+  background: #766f6b;
   transform: rotate(${rotate}) translate(103px);
 `
 
@@ -22,11 +23,10 @@ const BuildingOverlay2 = styled.div`
   right: -52px;
   height: 341px;
   width: 200px;
-  background: #76777e;
+  background: #766f6b;
 `
 const Row = styled.div`
   text-align: left;
-  margin-top: 18px;
 `
 const RectanlgeWindow = styled.span`
   display: inline-block;
@@ -90,7 +90,7 @@ export const BigBuildingRight = () => {
             left: "28px",
             width: "105px",
             opacity: "0.85",
-            transform: "skewY(17deg)",
+            transform: "skewY(13deg)",
           }}
           src={rightBuildingGraffiti}
           alt="graffiti"
@@ -114,8 +114,10 @@ export const BigBuildingRight = () => {
         </GreenTop>
         <Row
           style={{
-            marginLeft: "24px",
-            marginTop: "22px",
+            position: "absolute",
+            top: "21px",
+            left: "34px",
+            transform: "skewY(1deg)",
           }}
         >
           <OvalWindow />
@@ -123,10 +125,38 @@ export const BigBuildingRight = () => {
           <OvalWindow />
           <OvalWindow />
         </Row>
+        <Doorways
+          numDoors={2}
+          containerStyles={{
+            position: "absolute",
+            transform: "skewY(3deg)",
+            top: "21px",
+            left: "10px",
+            gap: "2px",
+          }}
+          doorStyles={{
+            width: "5px",
+            height: "29px",
+            borderRadius: "10px 10px 0 0",
+            background: "#080a096b",
+          }}
+        />
+        {/* <div
+          style={{
+            position: "absolute",
+            top: "30px",
+            height: "3px",
+            width: "100%",
+            background: "black",
+          }}
+        /> */}
 
         <Row
           style={{
-            marginLeft: "26px",
+            position: "absolute",
+            left: "34px",
+            bottom: "230px",
+            transform: "skewY(3deg)",
           }}
         >
           <RectanlgeWindow />
@@ -134,10 +164,29 @@ export const BigBuildingRight = () => {
           <RectanlgeWindow />
           <AccentRectangleWindow />
         </Row>
+        <Doorways
+          numDoors={2}
+          containerStyles={{
+            position: "absolute",
+            transform: "skewY(8deg)",
+            top: "74px",
+            left: "10px",
+            gap: "2px",
+          }}
+          doorStyles={{
+            width: "4px",
+            height: "29px",
+            borderRadius: "0",
+            background: "#080a09ab",
+          }}
+        />
 
         <Row
           style={{
-            marginLeft: "28px",
+            position: "absolute",
+            bottom: "177px",
+            left: "34px",
+            transform: "skewY(7deg)",
           }}
         >
           <RectanlgeWindow />
@@ -145,10 +194,29 @@ export const BigBuildingRight = () => {
           <RectanlgeWindow />
           <RectanlgeWindow />
         </Row>
+        <Doorways
+          numDoors={2}
+          containerStyles={{
+            position: "absolute",
+            transform: "skewY(9deg)",
+            top: "120px",
+            left: "10px",
+            gap: "2px",
+          }}
+          doorStyles={{
+            width: "4px",
+            height: "29px",
+            borderRadius: "0",
+            background: "#080a09ab",
+          }}
+        />
 
         <Row
           style={{
-            marginLeft: "30px",
+            position: "absolute",
+            left: "34px",
+            bottom: "126px",
+            transform: "skewY(10deg)",
           }}
         >
           <RectanlgeWindow />
@@ -156,10 +224,29 @@ export const BigBuildingRight = () => {
           <RectanlgeWindow />
           <RectanlgeWindow />
         </Row>
+        <Doorways
+          numDoors={2}
+          containerStyles={{
+            position: "absolute",
+            transform: "skewY(10deg)",
+            top: "170px",
+            left: "10px",
+            gap: "2px",
+          }}
+          doorStyles={{
+            width: "3px",
+            height: "29px",
+            borderRadius: "0",
+            background: "#080a09ab",
+          }}
+        />
 
         <Row
           style={{
-            marginLeft: "32px",
+            position: "absolute",
+            left: "34px",
+            bottom: "76px",
+            transform: "skewY(14deg)",
           }}
         >
           <RectanlgeWindow />
@@ -167,12 +254,30 @@ export const BigBuildingRight = () => {
           <RectanlgeWindow />
           <RectanlgeWindow />
         </Row>
+        <Doorways
+          numDoors={1}
+          containerStyles={{
+            position: "absolute",
+            transform: "skewY(10deg)",
+            top: "215px",
+            left: "12px",
+            gap: "2px",
+          }}
+          doorStyles={{
+            width: "3px",
+            height: "25px",
+            borderRadius: "0",
+            background: "#080a09ab",
+          }}
+        />
 
         <Row
           style={{
+            position: "absolute",
+            bottom: "3px",
+            left: "34px",
             display: "flex",
-            marginLeft: "34px",
-            marginTop: "22px",
+            transform: "skewY(13deg)",
           }}
         >
           <BigOvalWindow style={{ marginRight: "30px" }}>
