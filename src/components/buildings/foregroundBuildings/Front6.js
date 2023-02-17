@@ -73,6 +73,15 @@ const AirConditioner = styled.div`
   background: #87a0b9;
   transform: skewY(-2deg);
 `
+const AnotherACThing = styled.div`
+  position: absolute;
+  left: 38px;
+  top: -13px;
+  width: 8px;
+  height: 12px;
+  background: #546c7b;
+  transform: skewY(-2deg);
+`
 const BlackCircularThing = styled.div`
   position: absolute;
   left: 47px;
@@ -115,8 +124,8 @@ const BeigeBuilding = styled.div`
 const RandomDarkBuilding = styled.div`
   position: absolute;
   top: -20px;
-  left: 55px;
-  width: 39px;
+  left: 48px;
+  width: 43px;
   height: 30px;
   background: #2c3b3e;
   transform: skewY(-5deg);
@@ -147,10 +156,63 @@ export const Front6 = () => {
             width: "35px",
             height: "32px",
             border: "1px solid black",
-            background: "#f0b70e85",
+            background: "#f0b70e78",
             transform: "skewY(17deg)",
           }}
-        ></div>
+        >
+          {/* blue painting thing */}
+          <div
+            style={{
+              position: "absolute",
+              top: "11px",
+              right: "8px",
+              height: "9px",
+              width: "5px",
+              background: "#aad8aecc",
+            }}
+          />
+          {/* black bars */}
+          <div
+            style={{
+              transform: "skewY(-3deg)",
+              position: "absolute",
+              top: "7px",
+              width: "100%",
+              height: "1px",
+              background: "black",
+            }}
+          />
+          <div
+            style={{
+              transform: "skewY(-1deg)",
+              position: "absolute",
+              bottom: "7px",
+              width: "100%",
+              height: "1px",
+              background: "black",
+            }}
+          />
+          <div
+            style={{
+              transform: "skewY(-1deg)",
+              position: "absolute",
+              left: "15px",
+              width: "1px",
+              height: "100%",
+              background: "black",
+            }}
+          />
+          {/* red column */}
+          <div
+            style={{
+              position: "absolute",
+              right: "3px",
+              height: "100%",
+              width: "3px",
+              background: "#532a19",
+            }}
+          />
+        </div>
         <div
           style={{
             position: "absolute",
@@ -264,9 +326,9 @@ export const Front6 = () => {
           containerStyles={{
             position: "absolute",
             top: "130px",
-            left: "10px",
+            left: "8px",
             transform: "skewY(13deg)",
-            gap: "4px",
+            gap: "3px",
           }}
           doorStyles={{
             width: "8px",
@@ -282,9 +344,9 @@ export const Front6 = () => {
             position: "absolute",
             bottom: "-137px",
             right: "46px",
-            width: "76px",
+            width: "70px",
             height: "28px",
-            background: "#766753",
+            background: "#5d5543",
             transform: "skewY(-24deg)",
           }}
         />
@@ -293,11 +355,149 @@ export const Front6 = () => {
             position: "absolute",
             bottom: "-169px",
             left: "14px",
-            width: "62px",
+            width: "69px",
             height: "37px",
             border: "1px solid black",
-            background: "#f0b70e85",
+            background: "#f0b70e78",
             transform: "skewY(-25deg)",
+          }}
+        >
+          {/* red column */}
+          <div
+            style={{
+              position: "absolute",
+              left: "15px",
+              width: "6px",
+              height: "100%",
+              background: "#532a19",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: "43px",
+              width: "6px",
+              height: "100%",
+              background: "#532a19",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: "70px",
+              width: "6px",
+              height: "100%",
+              background: "#532a19",
+            }}
+          />
+          {/* blue painting thing */}
+          <div
+            style={{
+              position: "absolute",
+              top: "15px",
+              right: "35px",
+              height: "9px",
+              width: "4px",
+              background: "#baf4d9e3",
+            }}
+          />
+          {/* shadow overlay */}
+          <div
+            style={{
+              position: "absolute",
+              left: 0,
+              bottom: 0,
+              width: "15px",
+              height: "10px",
+              background: "#0000009e",
+            }}
+          />
+          {/* black bars */}
+          <div
+            style={{
+              position: "absolute",
+              transform: "skewY(5deg)",
+              top: "12px",
+              height: "1px",
+              width: "100%",
+              background: "black",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: "4px",
+              width: "1px",
+              height: "100%",
+              background: "black",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: "26px",
+              width: "1px",
+              height: "100%",
+              background: "black",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: "36px",
+              width: "1px",
+              height: "100%",
+              background: "black",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: "52px",
+              width: "1px",
+              height: "100%",
+              background: "black",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: "59px",
+              width: "1px",
+              height: "100%",
+              background: "black",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: "10px",
+              width: "1px",
+              height: "100%",
+              background: "black",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              transform: "skewY(3deg)",
+              bottom: "8px",
+              height: "1px",
+              width: "100%",
+              background: "black",
+            }}
+          />
+        </div>
+        {/* light overlay thing? */}
+        <div
+          style={{
+            zIndex: "-5",
+            position: "absolute",
+            bottom: "-185px",
+            left: "-15px",
+            height: "40px",
+            width: "29px",
+            background: "#f0b70e4f",
           }}
         />
         <div
@@ -553,6 +753,18 @@ export const Front6 = () => {
             borderRadius: "10px",
           }}
         />
+        <AnotherACThing>
+          <div
+            style={{
+              position: "absolute",
+              right: "1px",
+              top: "3px",
+              width: "2px",
+              height: "8px",
+              background: "#00000066",
+            }}
+          />
+        </AnotherACThing>
         <div
           style={{
             height: "10px",
